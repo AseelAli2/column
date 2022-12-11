@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+void main(){
+  runApp(aseel());
+}
+class aseel extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+
+      home: Scaffold(
+        backgroundColor: Colors.yellow,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('home'),
+          backgroundColor: Colors.cyan,
+
+
+        ),
+        body: Container(
+          child:Column(
+            children: [
+              Center(
+                child: Text(
+                    "aseel",
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                    
+                  ),
+                ),
+              ),
+              Text("ali"),
+              Text("aseem"),
+
+            ],
+          ),
+        ),
+      ),
+    );
+  }}
